@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEATH IS COMING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-section">
+        <p class="counter" id="age-counter"></p>
+        <div class="date-inputs-container">
+            <div class="date-input-group">
+                <span>since</span>
+                <input type="date" id="birthdate-input" pattern="\d{4}-\d{2}-\d{2}">
+            </div>
+            <div class="date-input-group">
+                <span>until</span>
+                <input type="number" id="endyear-input" min="1900" max="2100">
+            </div>
+            <button id="save-dates">Save</button>
+        </div>
+    </div>
+
+    <div class="grids-container">
+        <section class="grid-section">
+            <div class="grid years-months-grid"></div>
+        </section>
+
+        <section class="grid-section">
+            <div class="grid days-hours-grid"></div>
+        </section>
+
+        <section class="grid-section">
+            <div class="grid minutes-seconds-grid"></div>
+        </section>
+    </div>
+
+    <div class="bottom-section">
+        <p class="editable-text" id="years-months-text"></p>
+        <p class="editable-text" id="days-hours-text"></p>
+        <p class="editable-text" id="minutes-seconds-text"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

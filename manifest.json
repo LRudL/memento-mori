@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "DEATH IS COMING",
+  "version": "1.0",
+  "description": "Display various time-based counters on the new tab page",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage"
+  ]
+}
